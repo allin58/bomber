@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7753160d-86dd-4039-9de3-a62a81bf8b62" name="Default" comment="" />
+    <list default="true" id="7753160d-86dd-4039-9de3-a62a81bf8b62" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/DrunkenSailorPlan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/YourSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/YourSolver.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,29 +16,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="YourSolver.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YourSolver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/YourSolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="687">
+              <caret line="197" column="8" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="201" />
               <folding>
                 <element signature="e#1227#1228#0" expanded="true" />
                 <element signature="e#1259#1260#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrunkenSailorPlan.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/DrunkenSailorPlan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-              <folding>
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
+                <element signature="method#isBarrier#0;class#YourSolver#0" />
               </folding>
             </state>
           </provider>
@@ -49,6 +39,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
       <map>
@@ -60,8 +53,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/YourSolver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/DrunkenSailorPlan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/YourSolver.java" />
       </list>
     </option>
   </component>
@@ -235,15 +228,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568304135783</updated>
-      <workItem from="1568304137222" duration="9750000" />
+      <workItem from="1568304137222" duration="11485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9750000" />
+    <option name="totallyTimeSpent" value="11485000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -264,7 +257,7 @@
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="CheckStyle" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12260128" />
@@ -345,17 +338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/YourSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/DrunkenSailorPlan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -365,6 +347,18 @@
             <element signature="e#477#478#0" expanded="true" />
             <element signature="e#526#527#0" expanded="true" />
             <element signature="e#563#564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codenjoy/dojo/bomberman/client/YourSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="197" column="8" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="201" />
+          <folding>
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="method#isBarrier#0;class#YourSolver#0" />
           </folding>
         </state>
       </provider>

@@ -36,34 +36,40 @@ public class YourSolver implements Solver<Board> {
 
     private Dice dice;
     private Board board;
+    boolean isInvert = false;
+
 
     public YourSolver(Dice dice) {
         this.dice = dice;
     }
+
 
     @Override
     public String get(Board board) {
         this.board = board;
         if (board.isMyBombermanDead()) return "";
 
-       String myDirection = whereAmI(board);
+      String directional = isInvert?myDirectionInverted(board):myDirection(board);
 
-DrunkenSailorPlan drunkenSailorPlan = DrunkenSailorPlan.getInstance();
-if (isBarrier(board,myDirection)){
-    drunkenSailorPlan.setManeuver(true);
+       if (isBarrier(board,directional)) {
+           if (directional.equals("UP")) directional = "ACT,DOWN";
+           if (directional.equals("DOWN")) directional = "ACT,UP";
+           if (directional.equals("RIGHT")) directional = "ACT,LEFT";
+           if (directional.equals("LEFT")) directional = "ACT,RIGHT";
+           if(isInvert) isInvert = false;
+           else isInvert = true;
+
+       }
+        System.out.println(board.getBomberman()+" _________+++");
+
+    return directional;
 }
 
 
 
-if (!drunkenSailorPlan.isManeuver()) {
-    //return Direction.LEFT.toString();
-    return whereAmI(board);
-} else {
 
-   return  drunkenSailorPlan.execute(board,myDirection);
 
-}
-    }
+
 
 
 
@@ -138,12 +144,45 @@ return false;
     }
 
 
+    public String myDirectionInverted(Board board) {
+
+        Point point = board.getBomberman();
+
+
+
+        if (point.getX() == 31 || point.getX() == 1 || point.getY() == 31 || point.getY() == 1) {
+
+            if (point.getX() == 1 &&  point.getY() == 1) return "RIGHT";
+            if (point.getX() == 1 &&  point.getY() == 31) return "UP";
+            if (point.getX() == 31 &&  point.getY() == 31) return "LEFT";
+            if (point.getX() == 31 &&  point.getY() == 1) return "DOWN";
+
+            if (point.getX() == 1) return "DOWN";
+            if (point.getX() == 31) return "UP";
+            if (point.getY() == 1) return "RIGHT";
+            if (point.getY() == 31) return "LEFT";
+
+        }
+
+        if(point.getX()%2 != 0) {
+            if( point.getY() >16)
+                return "DOWN";
+            else return "UP";
+        }
+
+        if(point.getY()%2 != 0) {
+            if( point.getX() >16)
+                return "LEFT";
+            else return "RIGHT";
+        }
+
+        return "none";
+    }
 
 
 
 
-
-    public String whereAmI(Board board) {
+    public String myDirection(Board board) {
 
        Point point = board.getBomberman();
 
@@ -157,9 +196,9 @@ return false;
            if (point.getX() == 31 &&  point.getY() == 1) return "LEFT";
 
            if (point.getX() == 1) return "UP";
-           if (point.getX() == 31) return "RIGHT";
+           if (point.getX() == 31) return "DOWN";
            if (point.getY() == 1) return "LEFT";
-           if (point.getY() == 31) return "DOWN";
+           if (point.getY() == 31) return "RIGHT";
 
        }
 
