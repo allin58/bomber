@@ -60,7 +60,7 @@ public class YourSolver implements Solver<Board> {
            else isInvert = true;
 
        }
-        System.out.println(board.getBomberman()+" _________+++");
+      
 
     return directional;
 }
